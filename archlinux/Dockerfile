@@ -82,6 +82,5 @@ RUN echo "openssl version" > /home/scripts/Check.ps1
 RUN echo "openssl help" >> /home/scripts/Check.ps1
 
 RUN yes | pacman -Rs wget
-RUN yes | pacman -Rs awk
 WORKDIR /home/scripts/
 CMD ["pwsh","./Check.ps1"]
